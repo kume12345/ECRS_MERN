@@ -1,0 +1,397 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+*{
+  margin: 0;
+  
+}
+
+body {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  background-color: #a4dfcf;
+}
+
+.mainData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cinzel Decorative', serif;
+  position: relative;
+  padding-top: 30px;
+}
+
+.mainTitle {
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.mainBtn {
+  width: 300px;
+  padding: 20px;
+  border-radius: 0;
+  font-family: 'poppins';
+  text-transform: uppercase;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #fff solid 2px;
+  background: none;
+  border-radius: 40px;
+  transition: ease-in-out 0.2s;
+}
+
+.mainBtn:hover {
+  background-color: #d8d8d8;
+  border: #000 solid 2px;
+  color: #000;
+}
+
+
+header {
+  padding: 20px;
+  max-width: 1200px;
+  min-width: 1200px;
+}
+
+header .container {
+  
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* homepage */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.home img {
+  margin: 0;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -5;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.5;
+}
+
+.crime-details {
+  width: 400px;
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.crime-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.crime-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.crime-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+.report{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.systemFlex {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.crime {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+nav h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar {
+  margin: 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1aac83;
+  padding: 20px;
+}
+
+
+nav a, nav button {
+  margin-left: 10px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+header nav a{
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+header nav a.active {
+  background: var(--primary);
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+/* faq */
+.faq .question {
+  background: rgba(0,0,0,0.2);
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* contact form */
+form {
+  margin-top: 30px;
+}
+form input, form label span, form textarea, select {
+  display: block;
+}
+form input, form textarea ,select {
+  margin-bottom: 30px;
+  padding: 15px;
+  border:#000 solid 1px;
+  border-radius: 0px;
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  color: var(--secondary);
+  background-color: #e4e4e4;
+}
+
+textarea {
+  width: 600px;
+  max-width: 600px;
+}
+
+form label span {
+  margin-bottom: 10px;
+}
+
+/* careers list */
+.careers > a {
+  display: block;
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.careers > a:hover p {
+  color: var(--primary);
+}
+.careers p {
+  margin: 0;
+}
+.careers > a p:last-child {
+ font-size: 0.8em;
+ color: #bbb;
+}
+
+/* careers details */
+.career-details {
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
